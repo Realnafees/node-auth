@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <title><%= locals.title%></title>
+
+    <link rel="stylesheet" href="css/home.css" />
+  </head>
+  <body>
+      <h2>Account Created Sucessfully </h2>
+    <div id="form">
+      <h1>Login Now</h1>
+      <form id="login-form" action="/login-sucessfull" method="POST">
+        <label for="name">Enter Username :</label>
+        <input
+          type="text"
+          name="name"
+          id=""
+          placeholder="Enter Name"
+          required
+        />
+        <br />
+        <br />
+        <label for="password">Enter Password : &nbsp;</label>
+        <input
+          type="password"
+          name="pass"
+          placeholder="Enter Password"
+          required
+        />
+        <button id="login-button" type="submit">Login</button>
+      </form>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/562307b12b.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="/js/home.js"></script>
+  </body>
+</html>
